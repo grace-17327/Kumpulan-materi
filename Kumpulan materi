@@ -14,3 +14,144 @@ cout << "Nilai c:" << c << endl;
 cout << "Nilai a setelah (a + b):" << a + b << endl;
 return 0;
 }
+
+
+
+
+
+#include <iostreamo>
+using namespace std;
+
+int main()
+{
+    cout << "Hello world";
+    cout << "Hello world";
+    cout << "Hello world";
+    cout << "Hello world";
+    cout << "Hello world";
+
+    cout << "Hello world";
+    return a;
+}
+
+
+
+
+
+int main (){
+int arr[] = {5,3,4,1,2};
+int n = sizeof (arr) / sizeof(arr[0]);
+
+cout << "Array sebelum diurutkan: ";
+for (int i=0; i<n; i++) {
+cout << arr[i];
+}
+cout << endl;
+
+for (int i=0; i<n-1; i++) {
+for (int j=0; j<n-1; j++) {
+if (arr[j] > arr[j+1]) {
+int tamp = arr[j];
+arr[j] = arr[j+1];
+arr[j+1] = temp;
+}
+}
+}
+
+cout << "Array setelah diurutkan: ";
+for (int i=0; i<n; i++) {
+cout << arr[i] << " ";
+}
+cout << endl;
+}
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    string arr[] = {"hafly", "l", "Bachtiar", "thaila", "hool find falang"};
+    string target;
+
+
+
+
+#include <ncurses.h>
+#include <string>
+
+int main() {
+    initscr();
+    cbreak();
+    noecho();
+    keypad(stdscr, TRUE);
+
+    int y = 0, x = 0;
+    mvprintw(0, 0, "Gunakan tombol panah untuk menggerakan teks. Tekan 'q' untuk keluar.");
+
+    int ch;
+    while ((ch = getch()) != 'q') {
+        switch(ch) {
+            case KEY_UP:
+                y = (y > 0) ? y - 1 : y;
+                break;
+            case KEY_DOWN:
+                y = (y < LINES - 1) ? y + 1 : y;
+                break;
+            case KEY_LEFT:
+                x = (x > 0) ? x - 1 : x;
+                break;
+            case KEY_RIGHT:
+                x = (x < COLS - 1) ? x + 1 : x;
+                break;
+        }
+        clear();
+        mvprintw(y, x, "Teks bergerak");
+        refresh();
+    }
+
+    endwin();
+    return 0;
+}
+
+
+
+
+
+
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int kd_brg, jml_brg, total_hrg;
+    string nm_brg;
+    cout << "Masukkan kode barang: ";
+    cin >> kd_brg;
+    cout << "Masukkan jumlah barang: ";
+    cin >> jml_brg;
+
+    if (kd_brg == 1) {
+        nm_brg = "Sabun Mandi";
+        total_hrg = jml_brg * 2000;
+    } else if (kd_brg == 2) {
+        nm_brg = "Shampoo";
+        total_hrg = jml_brg * 6000;
+    } else if (kd_brg == 3) {
+        nm_brg = "Pasta Gigi";
+        total_hrg = jml_brg * 3500;
+    } else {
+        nm_brg = "Barang Lain";
+        total_hrg = 0;
+    }
+
+    cout << "Nama barang: " << nm_brg << endl;
+    cout << "Total harga: " << total_hrg << endl;
+
+    return 0;
+}
+
